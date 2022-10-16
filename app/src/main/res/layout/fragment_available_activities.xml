@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Recent Activities"
+        android:textSize="28dp"
+        android:textColor="#000000"
+        android:background="#4CAF50"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/addActivity"
+        android:text="+"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/image1"
+        app:srcCompat="@drawable/ic_baseline_food_bank_24"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:minWidth="200dp"
+        android:minHeight="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CBA9D"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/image1"
+        app:layout_constraintEnd_toEndOf="@id/image1"
+        app:layout_constraintStart_toStartOf="@id/image1"
+        tools:text="El Wafaa Charity" />
+
+    <ImageView
+        android:id="@+id/image2"
+        app:srcCompat="@drawable/ic_baseline_elderly_24"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:minWidth="200dp"
+        android:minHeight="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="270dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CBA9D"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/image2"
+        app:layout_constraintEnd_toEndOf="@id/image2"
+        app:layout_constraintStart_toStartOf="@id/image2"
+        tools:text="57357 Hospital" />
+
+    <ImageView
+        android:id="@+id/image3"
+        app:srcCompat="@drawable/ic_baseline_school_24"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:minWidth="200dp"
+        android:minHeight="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="490dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9CBA9D"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/image3"
+        app:layout_constraintEnd_toEndOf="@id/image3"
+        app:layout_constraintStart_toStartOf="@id/image3"
+        tools:text="El Bara3em School" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

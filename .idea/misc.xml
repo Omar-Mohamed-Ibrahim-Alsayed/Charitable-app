@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/University/Senior 1/First term/Agile/Project/Charitable/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/University/Senior 1/First term/Agile/Project/Charitable/app/src/main/res/layout/fragment_activity.xml" value="0.25" />
+        <entry key="..\:/University/Senior 1/First term/Agile/Project/Charitable/app/src/main/res/layout/fragment_admin_reciepts.xml" value="0.152" />
+        <entry key="..\:/University/Senior 1/First term/Agile/Project/Charitable/app/src/main/res/layout/fragment_available_activities.xml" value="0.25" />
+        <entry key="..\:/University/Senior 1/First term/Agile/Project/Charitable/app/src/main/res/layout/fragment_donation.xml" value="0.2" />
+        <entry key="..\:/University/Senior 1/First term/Agile/Project/Charitable/app/src/main/res/layout/fragment_establishments.xml" value="0.25" />
+        <entry key="..\:/University/Senior 1/First term/Agile/Project/Charitable/app/src/main/res/layout/fragment_home_screen.xml" value="0.25" />
+        <entry key="..\:/University/Senior 1/First term/Agile/Project/Charitable/app/src/main/res/layout/fragment_receipt.xml" value="0.176" />
+        <entry key="..\:/University/Senior 1/First term/Agile/Project/Charitable/app/src/main/res/layout/item_esr.xml" value="0.25" />
+        <entry key="..\:/University/Senior 1/First term/Agile/Project/Charitable/app/src/main/res/layout/item_receipt.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
