@@ -7,9 +7,9 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:backgroundTint="#585958"
+        android:backgroundTint="#71A13A"
         android:text="Donate"
         android:textSize="15sp"
         android:layout_marginEnd="20dp"

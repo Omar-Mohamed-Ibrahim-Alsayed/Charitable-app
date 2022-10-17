@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Recipients List"
+        android:textSize="28dp"
+        android:textColor="#000000"
+        android:background="#4CAF50"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <TextView
+        android:id="@+id/donor1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=" Foundation: Resala \n Amount needed: 200,000 \n "
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#000000" />
+
+
+    <TextView
+        android:id="@+id/donor2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=" Foundation: El Bara3em School \n Amount needed: 100,000 \n "
+        android:textSize="25dp"
+        android:layout_marginTop="170dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/donor3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=" Foundation: 57357 Hospital \n Amount needed: 750,000 \n "
+        android:textSize="25dp"
+        android:layout_marginTop="290dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/donor4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=" Foundation: Om Kalthom School \n Amount needed: 80,000 \n"
+        android:textSize="25dp"
+        android:layout_marginTop="410dp"
+        android:textColor="#000000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

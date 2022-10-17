@@ -11,16 +11,18 @@
         android:layout_width="339dp"
         android:layout_height="254dp"
         android:layout_marginTop="32dp"
+        android:background="#DDD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
+        android:src="@drawable/ic_baseline_directions_run_24" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next"
+        android:textColor="#000"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
@@ -30,91 +32,94 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Prev"
+        android:textColor="#000"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/donateBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="52dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:src="@tools:sample/avatars" />
+        android:src="@drawable/ic_baseline_attach_money_24" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/partBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="52dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:src="@tools:sample/avatars" />
+        android:src="@drawable/ic_baseline_query_builder_24" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/estBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="100dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        tools:src="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/donateBtn"
+        android:src="@drawable/ic_baseline_house_24" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/callBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="52dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        tools:src="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/partBtn"
+        android:src="@drawable/ic_baseline_local_phone_24" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        android:text="Donate"
+        app:layout_constraintEnd_toEndOf="@+id/donateBtn"
+        app:layout_constraintStart_toStartOf="@+id/donateBtn"
+        app:layout_constraintTop_toBottomOf="@+id/donateBtn" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        android:text="Participate"
+        app:layout_constraintEnd_toEndOf="@+id/partBtn"
+        app:layout_constraintStart_toStartOf="@+id/partBtn"
+        app:layout_constraintTop_toBottomOf="@+id/partBtn" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        android:text="Establishments"
+        app:layout_constraintEnd_toEndOf="@+id/estBtn"
+        app:layout_constraintStart_toStartOf="@+id/estBtn"
+        app:layout_constraintTop_toBottomOf="@+id/estBtn" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView5"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        android:text="Call us"
+        app:layout_constraintEnd_toEndOf="@+id/callBtn"
+        app:layout_constraintStart_toStartOf="@+id/callBtn"
+        app:layout_constraintTop_toBottomOf="@+id/callBtn" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="New Available Activity"
+        android:textColor="#000"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView" />
