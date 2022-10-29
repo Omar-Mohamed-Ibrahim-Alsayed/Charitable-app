@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.Receipt">
+    tools:context=".fragments.Slider">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
-        android:text="Receipts"
+        android:text="Items"
         android:textSize="50dp"
         android:textColor="#000"
         android:layout_height="100dp"
@@ -20,5 +20,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/title"
-        tools:listitem="@layout/item_receipt" />
+        tools:listitem="@layout/item_slider" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,12 +1,13 @@
-package com.example.charitable
+package com.example.charitable.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.charitable.R
 
-class Receipt : Fragment() {
+class Donation : Fragment() {
 
 
     override fun onCreateView(
@@ -14,7 +15,7 @@ class Receipt : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_receipt, container, false)
+        return inflater.inflate(R.layout.fragment_donation, container, false)
     }
 
 }
