@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.example.charitable.R
+import com.example.charitable.database.DatabaseManager
 import java.util.*
 
 class Login : Fragment() {
@@ -30,6 +31,8 @@ class Login : Fragment() {
         signIn = view.findViewById(R.id.startButton)
         signUp = view.findViewById(R.id.registerButton)
 
+        //Toast.makeText(view.context,DatabaseManager().execute(),Toast.LENGTH_SHORT).show()
+        DatabaseManager().c2()
 
         val userName = requireView().findViewById<EditText>(R.id.nameField)
         val password = requireView().findViewById<EditText>(R.id.editTextTextPassword2)
