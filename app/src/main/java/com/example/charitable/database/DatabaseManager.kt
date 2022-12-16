@@ -18,12 +18,12 @@ class DatabaseManager {
         try {
 
             val c = DriverManager.getConnection(
-                "jdbc:mysql://MYSQL_SERVER_ADDRESS:3306/charitable?serverTimezone=UTC",
+                "jdbc:mysql://MYSQL_SERVER_ADDRESS:3306/users?serverTimezone=UTC",
                 "Omar",
                 "omar123"
             )
             val s = c.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE)
-            val r = s.executeQuery("SELECT `u_id`, `f_id` FROM `role`")
+            val r = s.executeQuery("SELECT * FROM `users` WHERE 1")
 
             r.next()
             return ("done")
@@ -31,6 +31,7 @@ class DatabaseManager {
 
         } catch (e: SQLException) {
             e.printStackTrace()
+            //to return
             return "error2"
         }
 

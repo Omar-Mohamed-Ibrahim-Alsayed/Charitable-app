@@ -31,8 +31,9 @@ class Login : Fragment() {
         signIn = view.findViewById(R.id.startButton)
         signUp = view.findViewById(R.id.registerButton)
 
-        //Toast.makeText(view.context,DatabaseManager().execute(),Toast.LENGTH_SHORT).show()
+        DatabaseManager().connect()
         DatabaseManager().c2()
+
 
         val userName = requireView().findViewById<EditText>(R.id.nameField)
         val password = requireView().findViewById<EditText>(R.id.editTextTextPassword2)
@@ -63,13 +64,15 @@ class Login : Fragment() {
             }
             names.forEach {
                 if (name == it) {
-                    parentFragmentManager.beginTransaction().apply {
-                        replace(R.id.flFragment, HomeScreen(1))
-                        addToBackStack(null)
-                        commit()
+                        parentFragmentManager.beginTransaction().apply {
+                            replace(R.id.flFragment, HomeScreen(1))
+                            addToBackStack(null)
+                            commit()
+                        }
                     }
+
                 }
-            }
+
 
             savedString = adminsSharedPreferences.getString("string", "").toString()
             st = StringTokenizer(savedString, ",")
@@ -79,17 +82,16 @@ class Login : Fragment() {
             }
             names.forEach {
                 if (name == it) {
-                    parentFragmentManager.beginTransaction().apply {
-                        replace(R.id.flFragment, HomeScreen(0))
-                        addToBackStack(null)
-                        commit()
-                    }
+                        parentFragmentManager.beginTransaction().apply {
+                            replace(R.id.flFragment, HomeScreen(0))
+                            addToBackStack(null)
+                            commit()
+                        }
+
                 }
             }
 
         }
-
-
         signUp.setOnClickListener {
             parentFragmentManager.beginTransaction().apply {
                 replace(R.id.flFragment, SignUp())
@@ -97,8 +99,11 @@ class Login : Fragment() {
                 commit()
             }
         }
+
     }
 
 
-
 }
+
+
+
